@@ -1,22 +1,22 @@
 /*
  *	flowRaider
  *	Gunther Lehmann
- *	Version 0.1
+ *	Version 0.2
  *	2016
  *	BLITZEN GmbH & Co. KG
  */
 
 var flowRaider = function(pageClass, pages, actualPage, startPage, loop)
 {
-	this.pageClass			= (typeof pageClass !== 'undefined')	?	pageClass	: 'page';
+	this.pageClass = (typeof pageClass !== 'undefined') ? pageClass : 'page';
 
-	this.pages				= (typeof pages !== 'undefined')		?	pages		: 0;
+	this.pages = (typeof pages !== 'undefined') ? pages : 0;
 
-	this.actualPage			= (typeof actualPage !== 'undefined')	?	actualPage	: 0;
+	this.actualPage = (typeof actualPage !== 'undefined') ? actualPage : 0;
 
-	this.startPage			= (typeof startPage !== 'undefined')	?	startPage	: 1;
+	this.startPage = (typeof startPage !== 'undefined') ? startPage : 1;
 
-	this.loop				= (typeof loop !== 'undefined')			?	loop		: false;
+	this.loop = (typeof loop !== 'undefined') ? loop : false;
 };
 
 flowRaider.prototype.init = function()
