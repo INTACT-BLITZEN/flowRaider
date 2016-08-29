@@ -1,7 +1,6 @@
-/*
- *	flowRaider
- *	Gunther Lehmann
- *	Version 0.2
- *	2016
- *	BLITZEN GmbH & Co. KG
- */
+flowRaider Plugin
+Version 0.2
+
+jQuery needed.
+
+Built to create simple Webapps.
