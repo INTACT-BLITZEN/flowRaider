@@ -25,7 +25,7 @@ flowRaider.prototype.init = function()
 		$(this).attr('id', 'page-' + (index + 1));
 	});
 
-	this.pages		= $('.' + this.pageClass).length;
+	this.pages = $('.' + this.pageClass).length;
 	this.actualPage = this.startPage;
 
 	this.showActualPage();
@@ -52,7 +52,7 @@ flowRaider.prototype.nextStep = function(direction, beforeNavigate)
 	{
 		switch (direction)
 		{
-			case 'forward'	:
+			case 'forward' :
 				if (this.actualPage < this.pages)
 				{
 					this.actualPage++;
@@ -65,7 +65,7 @@ flowRaider.prototype.nextStep = function(direction, beforeNavigate)
 					}
 				}
 				break;
-			case 'backward'	:
+			case 'backward' :
 				if (this.actualPage > this.startPage)
 				{
 					this.actualPage--;
@@ -78,7 +78,7 @@ flowRaider.prototype.nextStep = function(direction, beforeNavigate)
 					}
 				}
 				break;
-			default			:
+			default :
 				this.actualPage = this.actualPage;
 				break;
 		}
